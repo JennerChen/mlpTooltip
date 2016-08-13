@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./tipsy.css">
+    <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.tipsy.js"></script>
+</head>
+
+<body>
+    <a data-mlpTip='singleTipMsg' style='display:inline-block'>消息(直接一个字符串)</a></br>
+    <a data-mlpTip='tipMsg.example'>在对象中的一个消息</a></br>
+    <a data-mlpTip='tipMsg.fun'>对象中执行函数</a></br>
+    <a data-mlpTip='tipMsg.a.b.c'>多层次对象</a></br>
+    <a data-mlpTip='wtf'>对象不存在</a></br>
+    <pre style="background: #efefef;padding: 10px;">
+var singleTipMsg = "mlpTip !";
+var tipMsg = {
+    example: 'aaa',
+    fun: function() {
+        return 'data-mlpTip 可以为一个回调函数';
+    },
+    bbb: 'xxxx',
+    a: {
+        b: {
+            c: '多层次对象！！'
+        }
+    }
+};
+    </pre>
+    <script type="text/javascript">
+    var singleTipMsg = "mlpTip !";
+    var tipMsg = {
+        example: 'aaa',
+        fun: function() {
+            return 'data-mlpTip 可以为一个回调函数';
+        },
+        bbb: 'xxxx',
+        a: {
+            b: {
+                c: '多层次对象！！'
+            }
+        }
+    };
+
+    
+    </script>
+</body>
+
+</html>
